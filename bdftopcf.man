@@ -22,7 +22,10 @@
 .\" not be used in advertising or otherwise to promote the sale, use or
 .\" other dealings in this Software without prior written authorization
 .\" from The Open Group.
-.TH BDFTOPCF 1 "Release 6.4" "X Version 11"
+.\"
+.\" $XFree86: xc/programs/bdftopcf/bdftopcf.man,v 1.8 2001/12/14 20:00:39 dawes Exp $
+.\"
+.TH BDFTOPCF 1 __xorgversion__
 .SH NAME
 bdftopcf \- convert X font from Bitmap Distribution Format to Portable
 Compiled Format
@@ -107,6 +110,6 @@ By default
 writes the pcf file to standard output; this option gives the name of a file
 to be used instead.
 .SH "SEE ALSO"
-X(1)
+X(__miscmansuffix__)
 .SH AUTHOR
 Keith Packard, MIT X Consortium
