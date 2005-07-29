@@ -21,7 +21,7 @@ dnl
 dnl Process this file with autoconf to create configure.
 
 AC_PREREQ([2.57])
-AC_INIT(bdftopcf, [7.0], [xorg@freedestkop.org], bdftopcf)
+AC_INIT(bdftopcf, [0.99.0], [https://bugs.freedesktop.org/enter_bug.cgi?product=xorg], bdftopcf)
 AM_INIT_AUTOMAKE([dist-bzip2 foreign])
 AM_MAINTAINER_MODE
 
@@ -34,5 +34,7 @@ AC_PROG_INSTALL
 PKG_CHECK_MODULES(BDFTOPCF, xfont)
 AC_SUBST(BDFTOPCF_CFLAGS)
 AC_SUBST(BDFTOPCF_LIBS)
+
+XORG_RELEASE_VERSION
 
 AC_OUTPUT([Makefile])
