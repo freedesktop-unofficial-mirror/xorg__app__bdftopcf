@@ -21,7 +21,7 @@ dnl
 dnl Process this file with autoconf to create configure.
 
 AC_PREREQ([2.57])
-AC_INIT(bdftopcf, [0.99.3], [https://bugs.freedesktop.org/enter_bug.cgi?product=xorg], bdftopcf)
+AC_INIT(bdftopcf, [1.0.0], [https://bugs.freedesktop.org/enter_bug.cgi?product=xorg], bdftopcf)
 AM_INIT_AUTOMAKE([dist-bzip2 foreign])
 AM_MAINTAINER_MODE
 
