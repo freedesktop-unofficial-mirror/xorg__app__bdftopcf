@@ -45,7 +45,7 @@ main (int argc, char *argv[])
 {
     FontRec font;
     FontFilePtr	input, output;
-    char    *input_name = 0, *output_name = 0;
+    char    *input_name = NULL, *output_name = NULL;
     char    *program_name;
     int	    bit, byte, glyph, scan;
 
