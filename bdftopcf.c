@@ -166,7 +166,7 @@ main (int argc, char *argv[])
     if (bdfReadFont (&font, input, bit, byte, glyph, scan) != Successful)
     {
 	fprintf (stderr, "%s: bdf input, %s, corrupt\n",
-		 program_name, input_name);
+		 program_name, input_name ? input_name : "<stdin>");
 	exit (1);
     }
     if (output_name)
