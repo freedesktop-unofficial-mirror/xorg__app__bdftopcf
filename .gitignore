@@ -18,3 +18,7 @@ install-sh
 missing
 stamp-h1
 *~
+*.o
+bdftopcf-*.tar.*
+ChangeLog
+tags
