@@ -21,7 +21,7 @@
 
 bin_PROGRAMS = bdftopcf
 
-bdftopcf_CFLAGS = @BDFTOPCF_CFLAGS@
+bdftopcf_CFLAGS = $(CWARNFLAGS) @BDFTOPCF_CFLAGS@
 bdftopcf_LDADD  = @BDFTOPCF_LIBS@
 
 bdftopcf_SOURCES = bdftopcf.c
