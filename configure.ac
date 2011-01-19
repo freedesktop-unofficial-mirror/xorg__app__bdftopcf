@@ -40,4 +40,7 @@ PKG_CHECK_MODULES(BDFTOPCF, xfont)
 
 XORG_WITH_LINT
 
-AC_OUTPUT([Makefile])
+AC_CONFIG_FILES([
+	Makefile
+	man/Makefile])
+AC_OUTPUT
