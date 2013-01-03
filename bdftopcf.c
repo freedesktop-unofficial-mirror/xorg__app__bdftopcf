@@ -26,6 +26,10 @@ from The Open Group.
 
 */
 
+#ifdef HAVE_CONFIG_H
+# include "config.h"
+#endif
+
 #include <X11/X.h>
 #include <X11/Xproto.h>
 #include <X11/fonts/fontmisc.h>
@@ -129,6 +133,11 @@ main(int argc, char *argv[])
                     output_name = argv[0];
                 }
                 break;
+
+            case 'v':
+                printf("%s\n", PACKAGE_STRING);
+                exit(0);
+
             default:
                 goto usage;
             }

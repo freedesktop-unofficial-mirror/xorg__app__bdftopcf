@@ -106,6 +106,9 @@ By default
 .I bdftopcf
 writes the pcf file to standard output; this option gives the name of a file
 to be used instead.
+.TP 8
+.B \-v
+Print version information and exit.
 .SH "SEE ALSO"
 X(__miscmansuffix__)
 .SH AUTHOR
