@@ -185,7 +185,7 @@ main(int argc, char *argv[])
         fprintf(stderr, "%s: can't write pcf file %s\n",
                 program_name, output_name ? output_name : "<stdout>");
         if (output_name)
-            unlink(output_name);
+            remove(output_name);
         exit(1);
     }
     else
