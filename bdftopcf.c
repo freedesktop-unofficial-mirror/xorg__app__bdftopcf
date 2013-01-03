@@ -165,7 +165,7 @@ main(int argc, char *argv[])
         }
     }
     else
-        input = FontFileOpenFd(0);
+        input = FontFileOpenFd(STDIN_FILENO);
     if (bdfReadFont(&font, input, bit, byte, glyph, scan) != Successful) {
         fprintf(stderr, "%s: bdf input, %s, corrupt\n",
                 program_name, input_name ? input_name : "<stdin>");
@@ -180,7 +180,7 @@ main(int argc, char *argv[])
         }
     }
     else
-        output = FontFileOpenWriteFd(1);
+        output = FontFileOpenWriteFd(STDOUT_FILENO);
     if (pcfWriteFont(&font, output) != Successful) {
         fprintf(stderr, "%s: can't write pcf file %s\n",
                 program_name, output_name ? output_name : "<stdout>");
