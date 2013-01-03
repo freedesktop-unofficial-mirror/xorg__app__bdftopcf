@@ -40,7 +40,7 @@ from The Open Group.
 int
 main(int argc, char *argv[])
 {
-    FontRec font;
+    FontRec font = { 0 };
 
     FontFilePtr input, output;
 
@@ -49,8 +49,6 @@ main(int argc, char *argv[])
     char *program_name;
 
     int bit, byte, glyph, scan;
-
-    bzero(&font, sizeof(FontRec));
 
     FontDefaultFormat(&bit, &byte, &glyph, &scan);
     program_name = argv[0];
