@@ -148,7 +148,7 @@ main(int argc, char *argv[])
                 fprintf(stderr,
                         "usage: %s [-p#] [-u#] [-m] [-l] [-M] [-L] [-t] [-i] [-o pcf file] [bdf file]\n"
                         "       where # for -p is 1, 2, 4, or 8\n"
-                        "       and   # for -s is 1, 2, or 4\n",
+                        "       and   # for -u is 1, 2, or 4\n",
                         program_name);
                 exit(1);
             }
